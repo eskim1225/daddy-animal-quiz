@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+@import "tailwindcss";
+
+@theme {
+  /* 아빠와 동물 10고개 Color Palette */
+  --color-primary: #FFB020;
+  --color-secondary: #2EC4B6;
+  --color-accent: #FF6B6B;
+  --color-bg-light: #F8FAFA;
+  --color-bg-warm: #FFF9E6;
+  --color-text-main: #2D3436;
+  --color-text-sub: #636E72;
+
+  /* Typography */
+  --font-sans: 'Pretendard', 'NanumSquareRound', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Jua', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-main);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 모바일 뷰포트 최적화 스크롤 숨김 (선택사항) */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
