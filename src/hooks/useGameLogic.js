@@ -13,22 +13,33 @@ export const useGameLogic = () => {
   // 사용자가 입력한 정답
   const [userInput, setUserInput] = useState('');
   
-  // 모달 상태: 'playing', 'correct', 'wrong', 'giveup', 'finished'
-  const [gameState, setGameState] = useState('playing');
+  // 모달/진행 상태: 'home', 'playing', 'correct', 'wrong', 'giveup', 'finished'
+  const [gameState, setGameState] = useState('home');
 
-  // 앱이 처음 로드될 때 동물을 섞어서 대기열에 넣음
+  // 앱이 처음 로드될 때 동물을 섞어서 대기열에 넣되, 시작은 하지 않음
   useEffect(() => {
-    startNewGame();
+    initQueue();
   }, []);
 
-  const startNewGame = useCallback(() => {
+  // 단순 큐 초기화 (Home 화면용)
+  const initQueue = useCallback(() => {
     const shuffled = shuffleArray(animalData);
     setAnimalQueue(shuffled);
     setCurrentIndex(0);
     setRevealedHintsCount(1);
     setUserInput('');
+  }, []);
+
+  // 게임 진짜 시작 (Home 화면에서 호출)
+  const startGame = useCallback(() => {
     setGameState('playing');
   }, []);
+
+  // 다시 시작하기 (결과 화면에서 호출)
+  const startNewGame = useCallback(() => {
+    initQueue();
+    setGameState('playing');
+  }, [initQueue]);
 
   const currentAnimal = animalQueue[currentIndex] || null;
   const isLastAnimal = currentIndex === animalQueue.length - 1;
@@ -99,6 +110,7 @@ export const useGameLogic = () => {
     nextProblem,
     continuePlaying,
     startNewGame,
+    startGame,
     totalCount: animalQueue.length,
     currentIndex
   };

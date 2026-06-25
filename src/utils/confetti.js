@@ -4,7 +4,7 @@ import confetti from 'canvas-confetti';
  * 정답을 맞췄을 때 화면 전체에 화려한 꽃가루(Confetti) 효과를 발생시킵니다.
  */
 export const triggerSuccessConfetti = () => {
-  const duration = 3000; // 3초간 지속
+  const duration = 1500; // 1.5초간 지속
   const end = Date.now() + duration;
 
   const frame = () => {

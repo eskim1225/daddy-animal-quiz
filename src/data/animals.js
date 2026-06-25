@@ -15,8 +15,7 @@ export const animalData = [
       { text: '사냥은 주로 암컷이 한답니다.', acting: false },
       { text: '나는 밀림의 왕자! 누구일까요?', acting: false }
     ],
-    visualHintUrl: 'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?auto=format&fit=crop&w=400&q=80',
-    imageUrl: 'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg'
   },
   {
     id: 2,
@@ -34,8 +33,7 @@ export const animalData = [
       { text: '기억력이 아주 좋다고 알려져 있어요.', acting: false },
       { text: '나는 코가 손인 동물! 누구일까요?', acting: false }
     ],
-    visualHintUrl: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=400&q=80',
-    imageUrl: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg'
   },
   {
     id: 3,
@@ -53,8 +51,7 @@ export const animalData = [
       { text: '꼬리가 아주 짧고 뭉툭해요.', acting: false },
       { text: '깡충깡충 뛰는 나는 누구일까요?', acting: false }
     ],
-    visualHintUrl: 'https://images.unsplash.com/photo-1585110396000-c9fd7e48afa1?auto=format&fit=crop&w=400&q=80',
-    imageUrl: 'https://images.unsplash.com/photo-1585110396000-c9fd7e48afa1?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://cdn.pixabay.com/photo/2020/02/29/18/59/rabbit-4890861_960_720.jpg'
   },
   {
     id: 4,
@@ -72,8 +69,7 @@ export const animalData = [
       { text: '목이 길어 슬픈 짐승이라는 시에도 나와요.', acting: false },
       { text: '목이 가장 긴 동물인 나는 누구일까요?', acting: false }
     ],
-    visualHintUrl: 'https://images.unsplash.com/photo-1547471284-db72ce87ccb9?auto=format&fit=crop&w=400&q=80',
-    imageUrl: 'https://images.unsplash.com/photo-1547471284-db72ce87ccb9?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Giraffe_Mikumi_National_Park.jpg'
   },
   {
     id: 5,
@@ -91,7 +87,6 @@ export const animalData = [
       { text: '정글이나 숲속에 주로 살아요.', acting: false },
       { text: '바나나를 좋아하는 나무 타기 선수! 누구일까요?', acting: false }
     ],
-    visualHintUrl: 'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=400&q=80',
-    imageUrl: 'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://cdn.pixabay.com/photo/2024/01/25/03/16/capuchin-monkey-8530884_960_720.jpg'
   }
 ];

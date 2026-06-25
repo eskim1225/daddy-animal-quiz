@@ -62,21 +62,25 @@ export const ResultModal = ({
           className="bg-white w-full max-w-sm rounded-[24px] shadow-xl overflow-hidden flex flex-col"
         >
           {/* 동물 이미지 영역 (정답이거나 포기한 경우에만 표시) */}
+          {/* h-48에서 aspect-square max-h-[50vh]로 변경하여 이미지를 크게 확대하되 화면 밖으로 밀리지 않게 방어 */}
           {(isCorrect || isGiveup) && animal?.imageUrl && (
-            <div className="w-full h-48 bg-gray-100 relative">
+            <div className="w-full aspect-square max-h-[50vh] bg-gray-100 relative shrink-0">
               <img 
                 src={animal.imageUrl} 
                 alt={animal.name} 
+                onError={(e) => {
+                  e.target.src = 'https://placehold.co/400x400/eeeeee/999999?text=?';
+                }}
                 className="w-full h-full object-cover"
               />
             </div>
           )}
 
-          <div className="p-6 text-center space-y-4">
+          <div className="p-5 text-center space-y-3 shrink-0">
             <h2 className="text-2xl font-[Jua] text-gray-800">{title}</h2>
             <p className="text-gray-600 text-lg">{message}</p>
             
-            <div className="pt-4">
+            <div className="pt-2">
               {actionBtn}
             </div>
           </div>
