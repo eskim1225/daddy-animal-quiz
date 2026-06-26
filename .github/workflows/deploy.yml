@@ -31,7 +31,7 @@ jobs:
       - name: Node.js 환경 설정
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Node.js 20 버전 사용
+          node-version: 24 # Node.js 20 버전 사용
           cache: 'npm'     # 의존성 설치 속도 향상을 위해 npm 캐시 사용
 
       - name: 패키지 의존성 설치 (npm ci)
