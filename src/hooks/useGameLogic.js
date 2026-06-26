@@ -23,7 +23,27 @@ export const useGameLogic = () => {
 
   // 단순 큐 초기화 (Home 화면용)
   const initQueue = useCallback(() => {
-    const shuffled = shuffleArray(animalData);
+    // 1. 미사용 동물(isActive: false) 필터링
+    const activeAnimals = animalData.filter(animal => animal.isActive !== false);
+    
+    // 2. 각 동물의 힌트들을 개별 객체의 hintOrder 속성에 맞게 오름차순 정렬 (Sort)
+    const processedAnimals = activeAnimals.map(animal => {
+      // 원본 데이터를 손상시키지 않기 위해 얕은 복사 후 정렬
+      const reorderedHints = [...animal.hints].sort((a, b) => {
+        // 방어 코드: hintOrder가 없을 경우 맨 뒤로 가도록 큰 숫자(99) 할당
+        const orderA = a.hintOrder ?? 99;
+        const orderB = b.hintOrder ?? 99;
+        return orderA - orderB;
+      });
+
+      return {
+        ...animal,
+        hints: reorderedHints
+      };
+    });
+
+    // 3. 전처리된 데이터를 섞어줍니다.
+    const shuffled = shuffleArray(processedAnimals);
     setAnimalQueue(shuffled);
     setCurrentIndex(0);
     setRevealedHintsCount(1);

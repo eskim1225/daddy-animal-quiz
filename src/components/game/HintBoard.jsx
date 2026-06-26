@@ -26,6 +26,8 @@ export const HintBoard = ({ currentAnimal, revealedHintsCount }) => {
   // 드러난 힌트만 추출하고, 가장 최신 힌트가 위에 오도록 역순(reverse) 정렬
   const revealedHints = currentAnimal.hints.slice(0, revealedHintsCount).map((hint, idx) => ({
     ...hint,
+    // 데이터 로드 시 이미 hintOrder 순서대로 hints 배열이 정렬되었으므로,
+    // 여기서의 idx는 원래 데이터의 인덱스가 아닌 '실제 화면에 노출되는 순서(0부터 시작)'를 의미합니다.
     originalIndex: idx
   })).reverse();
 

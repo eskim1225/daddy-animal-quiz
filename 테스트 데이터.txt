@@ -1,4 +1,5 @@
-export const animalData = [
+
+
   {
     "id": 1,
     "isActive": true,
@@ -111,7 +112,7 @@ export const animalData = [
       { "text": "(아빠가 무서운 표정으로 두 손을 갈고리 모양으로 만들며) \"어흥~!!\" 하고 아주 크게 으르렁거려요.", "acting": true, "hintOrder": 8 },
       { "text": "줄무늬가 멋진 산속의 왕! 나는 누구일까요?", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tiger_image.JPG"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Walking_tiger_female.jpg"
   },
   {
     "id": 7,
@@ -130,7 +131,7 @@ export const animalData = [
       { "text": "(아빠가 귀엽게 두 손을 모으고) \"멍멍! 왈왈!\" 하고 씩씩하게 짖어요.", "acting": true, "hintOrder": 8 },
       { "text": "사람들의 가장 친한 친구, 세 글자인 내 이름은 무엇일까요?", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dog%20puppy.jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Retriever_medium-coat_male.jpg"
   },
   {
     "id": 8,
@@ -168,7 +169,7 @@ export const animalData = [
       { "text": "(아빠가 배를 문지르며 뚱뚱한 흉내를 내고) \"꿀꿀! 꿀꿀꿀!\" 하고 소리를 내요.", "acting": true, "hintOrder": 8 },
       { "text": "꿀꿀 울고 통통한 나는 누구일까요?", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Weiner%20Pig.jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pig_USDA.jpg"
   },
   {
     "id": 10,
@@ -187,8 +188,9 @@ export const animalData = [
       { "text": "(아빠가 두 팔을 둥글게 높이 들고 무겁게 걸으며) \"크어엉~!\" 쿵쿵쿵 걸어가요.", "acting": true, "hintOrder": 8 },
       { "text": "겨울잠을 자고 꿀을 좋아하는 커다란 동물, 나는 누구일까요?", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bear%201000454.JPG"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brown_bear_(Ursus_arctos_arctos).jpg"
   },
+  [
   {
     "id": 11,
     "isActive": true,
@@ -206,7 +208,7 @@ export const animalData = [
       { "text": "길을 건널 때 땅에 칠해져 있는 횡단보도를 보면 내 이름이 생각날 거예요.", "acting": false, "hintOrder": 8 },
       { "text": "(아빠가 손가락으로 온몸에 줄을 긋는 시늉을 하며) \"내 몸에는 까만색과 하얀색 줄무늬가 가득해!\"", "acting": true, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Zebra_1.jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Zebra_Botswana_5.jpg"
   },
   {
     "id": 12,
@@ -225,7 +227,7 @@ export const animalData = [
       { "text": "(아빠가 양팔을 위아래로 쫙 벌리며) \"내 입은 악어만큼 엄청나게 크게 벌릴 수 있어!\"", "acting": true, "hintOrder": 8 },
       { "text": "동물원에서 커다란 수박을 한 입에 와그작! 깨물어 먹는 동물이 바로 나예요.", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hippopotamus_(1).jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hippopotamus_in_the_Luangwa_River.jpg"
   },
   {
     "id": 13,
@@ -282,7 +284,7 @@ export const animalData = [
       { "text": "(아빠가 두 손을 모아 입에 대고 빠르게 갉아먹는 시늉을 해주세요) \"오도독 오도독! 단단한 껍질도 잘 까먹지!\"", "acting": true, "hintOrder": 8 },
       { "text": "내가 제일 좋아하는 간식은 동그랗고 귀여운 도토리와 밤이에요.", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Squirrel_(1).jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamias_sibiricus_lineatus_1.jpg"
   },
   {
     "id": 16,
@@ -301,7 +303,7 @@ export const animalData = [
       { "text": "누런색을 띤 친구들은 우리에게 튼튼한 가죽과 맛있는 고기를 주는 정말 고마운 동물이에요.", "acting": false, "hintOrder": 8 },
       { "text": "(아빠가 목소리를 낮게 깔고 길게) \"음메~ 음메~\" 하고 울어주세요.", "acting": true, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20cow%20looking%20at%20the%20viewer.jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fleckvieh_cow_in_an_alpine_meadow.jpg"
   },
   {
     "id": 17,
@@ -320,7 +322,7 @@ export const animalData = [
       { "text": "우리나라에서는 제주도에 가면 나를 타고 넓은 들판을 달리는 체험을 많이 할 수 있어요.", "acting": false, "hintOrder": 8 },
       { "text": "(아빠가 입술을 부르르 떨며) \"푸르르르~ 히이잉!\" 하고 크게 소리 내어주세요.", "acting": true, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Horse_gr.jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bianditz_mendian_behorra_pottoka_kumearekin.jpg"
   },
   {
     "id": 18,
@@ -396,7 +398,7 @@ export const animalData = [
       { "text": "(아빠가 손으로 납작한 부리를 만들고 입술을 쭉 내밀며) \"꽥꽥! 꽥꽥! 나는 이렇게 우렁차게 울어.\"", "acting": true, "hintOrder": 8 },
       { "text": "목욕할 때 물에 띄우고 노는 노란색 장난감 새가 바로 나예요.", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bird-Duck-Mallard-1908.jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mallard_male_standing.jpg"
   },
   {
     "id": 22,
@@ -415,7 +417,7 @@ export const animalData = [
       { "text": "(아빠가 엉덩이를 좌우로 씰룩씰룩 흔들며) \"크고 탐스러운 내 꼬리 어때? 살랑살랑~\"", "acting": true, "hintOrder": 8 },
       { "text": "만화 '뽀롱뽀롱 뽀로로'에서 뚝딱뚝딱 물건을 잘 만드는 발명왕 '에디'가 바로 나예요.", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_(26561173144).jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Fox_standing_in_snow.jpg"
   },
   {
     "id": 23,
@@ -605,7 +607,7 @@ export const animalData = [
       { "text": "코에 뿔이 달린 소를 닮았다고 해서 내 이름이 지어졌어요.", "acting": false, "hintOrder": 8 },
       { "text": "코코코~ 코에 멋진 뿔이 달린 이 거대한 동물은 누구일까요?", "acting": false, "hintOrder": 9 }
     ],
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhinoceros.jpg"
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Rhinoceros_in_Kruger_National_Park.jpg"
   },
   {
     "id": 33,
@@ -759,4 +761,7 @@ export const animalData = [
     ],
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/House_mouse.jpg"
   }
-];
+
+
+
+
